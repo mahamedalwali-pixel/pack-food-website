@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مطعم باك فود - الطعام السريع الفاخر">
+    <title>باك فود | Pack Food</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="ar">العربية</button>
+        <button class="lang-btn" data-lang="en">English</button>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="assets/logo.svg" alt="Pack Food" class="logo-img">
+                    <span class="logo-text" data-ar="باك فود" data-en="Pack Food">باك فود</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                    <a href="#menu" class="nav-link" data-ar="القائمة" data-en="Menu">القائمة</a>
+                    <a href="#gallery" class="nav-link" data-ar="الصور" data-en="Gallery">الصور</a>
+                    <a href="#reviews" class="nav-link" data-ar="التقييمات" data-en="Reviews">التقييمات</a>
+                    <a href="#contact" class="nav-link" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title" data-ar="طعم الفخامة في كل لقمة" data-en="Luxury Taste in Every Bite">طعم الفخامة في كل لقمة</h1>
+            <p class="hero-subtitle" data-ar="افضل الشطائر والوجبات السريعة الفاخرة" data-en="The Best Sandwiches and Premium Fast Food">أفضل الشطائر والوجبات السريعة الفاخرة</p>
+            <button class="cta-btn" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</button>
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero-burger.png" alt="Pack Food Burger" class="hero-img">
+        </div>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info">
+        <div class="info-card">
+            <i class="fas fa-clock"></i>
+            <h3 data-ar="ساعات العمل" data-en="Hours">ساعات العمل</h3>
+            <p data-ar="متاح حتى الساعة 2 صباحًا" data-en="Open until 2 AM">متاح حتى الساعة 2 صباحًا</p>
+        </div>
+        <div class="info-card">
+            <i class="fas fa-star"></i>
+            <h3 data-ar="التقييم" data-en="Rating">التقييم</h3>
+            <p data-ar="3.5 من 5 نجوم (179 تقييم)" data-en="3.5 out of 5 stars (179 reviews)">3.5 من 5 نجوم (179 تقييم)</p>
+        </div>
+        <div class="info-card">
+            <i class="fas fa-truck"></i>
+            <h3 data-ar="التوصيل" data-en="Delivery">التوصيل</h3>
+            <p data-ar="توصيل بدون تواصل" data-en="No-contact delivery">توصيل بدون تواصل</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="section-header">
+            <h2 class="section-title" data-ar="قائمة الطعام" data-en="Our Menu">قائمة الطعام</h2>
+            <p class="section-subtitle" data-ar="اختر من تشكيلتنا الواسعة من الوجبات اللذيذة" data-en="Choose from our wide selection of delicious meals">اختر من تشكيلتنا الواسعة من الوجبات اللذيذة</p>
+        </div>
+
+        <!-- Menu Tabs -->
+        <div class="menu-tabs">
+            <button class="tab-btn active" data-category="burgers" data-ar="الشطائر" data-en="Burgers">الشطائر</button>
+            <button class="tab-btn" data-category="breakfast" data-ar="الإفطار" data-en="Breakfast">الإفطار</button>
+            <button class="tab-btn" data-category="sides" data-ar="المقبلات" data-en="Sides">المقبلات</button>
+            <button class="tab-btn" data-category="drinks" data-ar="المشروبات" data-en="Drinks">المشروبات</button>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu-items">
+            <!-- Burgers -->
+            <div class="menu-category" data-category="burgers">
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/burger-1.png" alt="Chicken Burger">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="برجر الدجاج المشوي" data-en="Grilled Chicken Burger">برجر الدجاج المشوي</h3>
+                        <p class="item-description" data-ar="دجاج طازج مشوي مع الخس والطماطم والصلصة الخاصة" data-en="Fresh grilled chicken with lettuce, tomato and special sauce">دجاج طازج مشوي مع الخس والطماطم والصلصة الخاصة</p>
+                        <div class="item-price">
+                            <span class="price-single">14</span>
+                            <span class="price-double">19</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/burger-2.png" alt="Beef Burger">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="برجر لحم البقر" data-en="Beef Burger">برجر لحم البقر</h3>
+                        <p class="item-description" data-ar="لحم البقر الطازج مع الجبن والمخللات والبصل" data-en="Fresh beef with cheese, pickles and onions">لحم البقر الطازج مع الجبن والمخللات والبصل</p>
+                        <div class="item-price">
+                            <span class="price-single">19</span>
+                            <span class="price-double">27</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/burger-3.png" alt="Classic Burger">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="كلاسيك برجر" data-en="Classic Burger">كلاسيك برجر</h3>
+                        <p class="item-description" data-ar="البرجر الكلاسيكي مع الخس والطماطم والجبن" data-en="Classic burger with lettuce, tomato and cheese">البرجر الكلاسيكي مع الخس والطماطم والجبن</p>
+                        <div class="item-price">
+                            <span class="price-single">14</span>
+                            <span class="price-double">19</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/burger-4.png" alt="Shrimp Burger">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="برجر الجمبري" data-en="Shrimp Burger">برجر الجمبري</h3>
+                        <p class="item-description" data-ar="جمبري طازج مع الخس والصلصة الحارة" data-en="Fresh shrimp with lettuce and spicy sauce">جمبري طازج مع الخس والصلصة الحارة</p>
+                        <div class="item-price">
+                            <span class="price-single">23</span>
+                            <span class="price-double">28</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breakfast -->
+            <div class="menu-category" data-category="breakfast" style="display: none;">
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/breakfast-1.png" alt="Sandwich with Fries">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="ساندويتش دجاج مع بطاطس" data-en="Chicken Sandwich with Fries">ساندويتش دجاج مع بطاطس</h3>
+                        <p class="item-description" data-ar="ساندويتش دجاج مقرمش مع بطاطس ذهبية طازجة" data-en="Crispy chicken sandwich with fresh golden fries">ساندويتش دجاج مقرمش مع بطاطس ذهبية طازجة</p>
+                        <div class="item-price">
+                            <span class="price">17</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/breakfast-2.png" alt="Meat Sandwich">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="ساندويتش اللحم المدخن" data-en="Smoked Meat Sandwich">ساندويتش اللحم المدخن</h3>
+                        <p class="item-description" data-ar="لحم مدخن طري مع الخضار الطازجة" data-en="Tender smoked meat with fresh vegetables">لحم مدخن طري مع الخضار الطازجة</p>
+                        <div class="item-price">
+                            <span class="price">19</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/breakfast-3.png" alt="Hot Dog">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="هوت دوج لذيذ" data-en="Delicious Hot Dog">هوت دوج لذيذ</h3>
+                        <p class="item-description" data-ar="نقانق طازجة مع الصلصات والخضار" data-en="Fresh sausages with sauces and vegetables">نقانق طازجة مع الصلصات والخضار</p>
+                        <div class="item-price">
+                            <span class="price">13</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/breakfast-4.png" alt="Falafel Wrap">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="رول الفلافل" data-en="Falafel Wrap">رول الفلافل</h3>
+                        <p class="item-description" data-ar="فلافل طازجة مع الطحينة والطماطم والخيار" data-en="Fresh falafel with tahini, tomato and cucumber">فلافل طازجة مع الطحينة والطماطم والخيار</p>
+                        <div class="item-price">
+                            <span class="price">13</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sides -->
+            <div class="menu-category" data-category="sides" style="display: none;">
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/sides-1.png" alt="French Fries">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="بطاطس مقلية" data-en="French Fries">بطاطس مقلية</h3>
+                        <p class="item-description" data-ar="بطاطس ذهبية مقرمشة مع الملح والتوابل" data-en="Golden crispy fries with salt and spices">بطاطس ذهبية مقرمشة مع الملح والتوابل</p>
+                        <div class="item-price">
+                            <span class="price">10</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/sides-2.png" alt="Onion Rings">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="حلقات البصل" data-en="Onion Rings">حلقات البصل</h3>
+                        <p class="item-description" data-ar="حلقات بصل مقرمشة مع الصلصة الحارة" data-en="Crispy onion rings with spicy sauce">حلقات بصل مقرمشة مع الصلصة الحارة</p>
+                        <div class="item-price">
+                            <span class="price">12</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/sides-3.png" alt="Coleslaw">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="سلطة الملفوف" data-en="Coleslaw">سلطة الملفوف</h3>
+                        <p class="item-description" data-ar="ملفوف طازج مع الصلصة الخفيفة" data-en="Fresh cabbage with light sauce">ملفوف طازج مع الصلصة الخفيفة</p>
+                        <div class="item-price">
+                            <span class="price">8</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/sides-4.png" alt="Salad">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="سلطة خضار" data-en="Vegetable Salad">سلطة خضار</h3>
+                        <p class="item-description" data-ar="سلطة صحية مع خضار طازجة وصلصة شهية" data-en="Healthy salad with fresh vegetables and tasty dressing">سلطة صحية مع خضار طازجة وصلصة شهية</p>
+                        <div class="item-price">
+                            <span class="price">10</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-category" data-category="drinks" style="display: none;">
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/drinks-1.png" alt="Soft Drink">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="مشروب غازي" data-en="Soft Drink">مشروب غازي</h3>
+                        <p class="item-description" data-ar="مشروب منعش بارد" data-en="Refreshing cold beverage">مشروب منعش بارد</p>
+                        <div class="item-price">
+                            <span class="price">5</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/drinks-2.png" alt="Juice">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="عصير طازج" data-en="Fresh Juice">عصير طازج</h3>
+                        <p class="item-description" data-ar="عصير طازج صحي بدون إضافات" data-en="Healthy fresh juice with no additives">عصير طازج صحي بدون إضافات</p>
+                        <div class="item-price">
+                            <span class="price">8</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/drinks-3.png" alt="Milkshake">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="ميلك شيك" data-en="Milkshake">ميلك شيك</h3>
+                        <p class="item-description" data-ar="ميلك شيك لذيذ بنكهات مختلفة" data-en="Delicious milkshake in various flavors">ميلك شيك لذيذ بنكهات مختلفة</p>
+                        <div class="item-price">
+                            <span class="price">10</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-aos="fade-up">
+                    <div class="item-image">
+                        <img src="assets/menu/drinks-4.png" alt="Iced Coffee">
+                    </div>
+                    <div class="item-content">
+                        <h3 class="item-name" data-ar="قهوة مثلجة" data-en="Iced Coffee">قهوة مثلجة</h3>
+                        <p class="item-description" data-ar="قهوة سعودية عريقة مثلجة" data-en="Traditional Saudi iced coffee">قهوة سعودية عريقة مثلجة</p>
+                        <div class="item-price">
+                            <span class="price">6</span>
+                            <span class="currency">ريال</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="section-header">
+            <h2 class="section-title" data-ar="معرض الصور" data-en="Photo Gallery">معرض الصور</h2>
+            <p class="section-subtitle" data-ar="شاهد جودة طعامنا من الداخل والخارج" data-en="See the quality of our food inside and out">شاهد جودة طعامنا من الداخل والخارج</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-aos="zoom-in">
+                <img src="assets/gallery/interior-1.jpg" alt="Interior">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in">
+                <img src="assets/gallery/food-1.jpg" alt="Burger">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in">
+                <img src="assets/gallery/food-2.jpg" alt="Sandwich">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in">
+                <img src="assets/gallery/interior-2.jpg" alt="Restaurant">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="section-header">
+            <h2 class="section-title" data-ar="آراء عملائنا" data-en="Customer Reviews">آراء عملائنا</h2>
+            <p class="section-subtitle" data-ar="ما يقوله عملاؤنا عن خدمتنا" data-en="What our customers say about us">ما يقوله عملاؤنا عن خدمتنا</p>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card" data-aos="fade-up">
+                <div class="review-header">
+                    <h3 class="review-name" data-ar="المها الشمري" data-en="Al-Moha Al-Shammari">المها الشمري</h3>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="review-text" data-ar="ما شاء الله تبارك الله، التوصيل سريع جداً والطعم رائع! البرجر طازج جداً والخدمة ممتازة." data-en="Excellent service! The delivery was fast and the food was very fresh. The burgers are delicious and the staff is very friendly.">ما شاء الله تبارك الله، التوصيل سريع جداً والطعم رائع! البرجر طازج جداً والخدمة ممتازة.</p>
+                <p class="review-date" data-ar="منذ 4 أشهر" data-en="4 months ago">منذ 4 أشهر</p>
+            </div>
+
+            <div class="review-card" data-aos="fade-up">
+                <div class="review-header">
+                    <h3 class="review-name" data-ar="عبد الرحمن الدعيع" data-en="Abdulrahman Al-Doaia">عبد الرحمن الدعيع</h3>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <p class="review-text" data-ar="البرجر المشوي رائع جداً! الطعم ممتاز والجودة عالية جداً. سأطلب منهم مرة أخرى بكل تأكيد." data-en="The grilled burger is amazing! The taste is excellent and the quality is very high. I will definitely order from them again.">البرجر المشوي رائع جداً! الطعم ممتاز والجودة عالية جداً. سأطلب منهم مرة أخرى بكل تأكيد.</p>
+                <p class="review-date" data-ar="منذ سنة" data-en="1 year ago">منذ سنة</p>
+            </div>
+
+            <div class="review-card" data-aos="fade-up">
+                <div class="review-header">
+                    <h3 class="review-name" data-ar="سارة محمد" data-en="Sarah Mohammad">سارة محمد</h3>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <p class="review-text" data-ar="المطعم رائع والموقع جيد جداً. الطعام لذيذ والخدمة سريعة. أنصح الجميع بزيارته." data-en="Great restaurant and excellent location. The food is delicious and the service is fast. I recommend everyone to visit.">المطعم رائع والموقع جيد جداً. الطعام لذيذ والخدمة سريعة. أنصح الجميع بزيارته.</p>
+                <p class="review-date" data-ar="منذ شهرين" data-en="2 months ago">منذ شهرين</p>
+            </div>
+        </div>
+
+        <!-- Review Form -->
+        <div class="review-form-container" data-aos="fade-up">
+            <h3 class="form-title" data-ar="اترك تقييماً" data-en="Leave a Review">اترك تقييماً</h3>
+            <form class="review-form" id="reviewForm">
+                <input type="text" placeholder="اسمك | Your Name" class="form-input" required>
+                <textarea placeholder="تقييمك | Your Review" class="form-textarea" rows="4" required></textarea>
+                <div class="rating-selector">
+                    <label data-ar="التقييم:" data-en="Rating:">التقييم:</label>
+                    <div class="stars">
+                        <i class="fas fa-star" data-rating="1"></i>
+                        <i class="fas fa-star" data-rating="2"></i>
+                        <i class="fas fa-star" data-rating="3"></i>
+                        <i class="fas fa-star" data-rating="4"></i>
+                        <i class="fas fa-star" data-rating="5"></i>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn" data-ar="أرسل التقييم" data-en="Submit Review">أرسل التقييم</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2 class="section-title" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item" data-aos="fade-right">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3 data-ar="العنوان" data-en="Address">العنوان</h3>
+                        <p data-ar="مدينة الملك خالد العسكرية" data-en="King Khalid Military City">مدينة الملك خالد العسكرية</p>
+                    </div>
+                </div>
+
+                <div class="info-item" data-aos="fade-right">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3 data-ar="رقم الهاتف" data-en="Phone">رقم الهاتف</h3>
+                        <p dir="ltr"><a href="tel:+966530809125">+966 53 080 9125</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item" data-aos="fade-right">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3 data-ar="ساعات العمل" data-en="Hours">ساعات العمل</h3>
+                        <p data-ar="متاح 24/7 حتى الساعة 2 صباحاً" data-en="Open until 2 AM daily">متاح 24/7 حتى الساعة 2 صباحاً</p>
+                    </div>
+                </div>
+
+                <div class="info-item" data-aos="fade-right">
+                    <i class="fas fa-utensils"></i>
+                    <div>
+                        <h3 data-ar="الخيارات" data-en="Options">الخيارات</h3>
+                        <p data-ar="توصيل · تناول في المطعم · الاستلام" data-en="Delivery · Dine-in · Takeaway">توصيل · تناول في المطعم · الاستلام</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" placeholder="اسمك | Your Name" class="form-input" required>
+                    <input type="email" placeholder="بريدك الإلكتروني | Your Email" class="form-input" required>
+                    <textarea placeholder="رسالتك | Your Message" class="form-textarea" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn" data-ar="أرسل الرسالة" data-en="Send Message">أرسل الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-ar="عن المطعم" data-en="About Us">عن المطعم</h3>
+                <p data-ar="مطعم باك فود متخصص في تقديم الطعام السريع الفاخر بأفضل جودة وأسعار منافسة." data-en="Pack Food is specialized in providing premium fast food with the best quality and competitive prices.">مطعم باك فود متخصص في تقديم الطعام السريع الفاخر بأفضل جودة وأسعار منافسة.</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h3>
+                <ul>
+                    <li><a href="#menu" data-ar="القائمة" data-en="Menu">القائمة</a></li>
+                    <li><a href="#gallery" data-ar="الصور" data-en="Gallery">الصور</a></li>
+                    <li><a href="#reviews" data-ar="التقييمات" data-en="Reviews">التقييمات</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-ar="تابعنا" data-en="Follow Us">تابعنا</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-ar="جميع الحقوق محفوظة © 2024 باك فود" data-en="All Rights Reserved © 2024 Pack Food">جميع الحقوق محفوظة © 2024 باك فود</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
